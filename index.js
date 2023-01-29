@@ -73,3 +73,14 @@ class ProductManager {
     }
   }
 }
+const productManager = new ProductManager("./products.json");
+console.log(productManager.getProducts());
+console.log(productManager.addProduct("producto prueba","Este es un producto prueba", 200, "Sin imagen","abc123",25));
+console.log(productManager.getProducts());
+console.log(productManager.addProduct("producto prueba","Este es un producto prueba", 200, "Sin imagen","abc123",25));
+console.log(productManager.getProductById("acef87cc-b087-49e3-9864-18e8dc7c5bdc"));
+console.log(productManager.getProductById(1));
+//Quitar comentario a siguiente linea para ver como se actualiza el producto
+//console.log(productManager.updateProduct("acef87cc-b087-49e3-9864-18e8dc7c5bdc", "producto prueba actualizado","Este es un producto prueba actualizado", 200, "Sin imagen","abc123",250))
+//Quitar comentario a siguiente linea para ver como se elimina el producto
+//console.log(productManager.deleteProduct("acef87cc-b087-49e3-9864-18e8dc7c5bdc"))
